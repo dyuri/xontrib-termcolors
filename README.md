@@ -30,8 +30,12 @@ $ termcolors
 The main 16 colors will be used directly from the pygments/ptk theme. The following special colors can be set by adding the tokens to your theme:
 
 - `Token.Terminal.Foreground` - foreground color
-- `Token.Terminal.Background` - Background color
-- `Token.Terminal.Curson` - Cursor color
+- `Token.Terminal.Background` - background color
+- `Token.Terminal.Curson` - cursor color
+
+## Known issues
+
+`termcolors` command cannot be used in `.xonshrc` currently, it needs a working shell instance to get the theme.
 
 ## Credits
 
