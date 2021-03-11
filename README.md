@@ -57,10 +57,6 @@ def on_post_init(**_):
     termcolors
 ```
 
-## Known issues
-
-`termcolors` command cannot be used in `.xonshrc` currently, it needs a working shell instance to get the theme.
-
 ## Credits
 
 This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
