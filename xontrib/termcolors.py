@@ -77,12 +77,17 @@ def _tc_show_colors():
     return "".join(collist)
 
 
-def _tc_set_colors(args, stdin=None):
+def _tc_set_colors(args=None, stdin=None):
     _tc_set_term_colors()
     _tc_set_spec_colors()
 
     if __xonsh__.env.get('XONTRIB_TERMCOLORS_DEBUG', False):
         return _tc_show_colors()
+
+
+@events.on_post_init
+def on_post_init(**_):
+    _tc_set_colors()
 
 
 aliases["termcolors"] = _tc_set_colors
