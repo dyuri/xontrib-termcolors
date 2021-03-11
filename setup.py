@@ -20,7 +20,7 @@ setuptools.setup(
     install_requires=['xonsh'],
     packages=['xontrib'],
     package_dir={'xontrib': 'xontrib'},
-    package_data={'xontrib': ['*.xsh']},
+    package_data={'xontrib': ['*.py']},
     platforms='any',
     url='https://github.com/dyuri/xontrib-termcolors',
     project_urls={
