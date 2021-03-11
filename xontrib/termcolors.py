@@ -81,7 +81,8 @@ def _tc_set_colors(args, stdin=None):
     _tc_set_term_colors()
     _tc_set_spec_colors()
 
-    return _tc_show_colors()
+    if __xonsh__.env.get('XONTRIB_TERMCOLORS_DEBUG', False):
+        return _tc_show_colors()
 
 
 aliases["termcolors"] = _tc_set_colors
